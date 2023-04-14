@@ -1,0 +1,330 @@
+
+// mobile
+@media only screen and (max-width: 576px){
+    .header{
+        .header-carousel{
+            .carousel-overlay{
+                display: none;
+            }
+        }
+    }
+    
+
+    .book-section{
+        display: flex;
+        flex-direction: column;
+        .book-info-wrap{
+            width: 100%;
+            .book-info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &__item{
+                    margin-bottom: 20px;
+                    padding: 6px 10px;
+                }
+            }
+        }
+        .book-input{
+            width: 100%;
+            .book-input-name{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
+                }
+            }
+            .book-input-date{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
+                }
+            }
+            .book-input-submit{
+                flex-direction: column;
+                textarea{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+
+    // about section
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        .about-half{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+            .about-half-rw{
+                width: 100%;
+                &__content{
+                    text-align: center;
+                    padding: 10px;
+                    width: 100%;
+                    &-subheader{
+                        margin-top: -1.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // best seller section
+    .best-seller-section{
+        .font-title{
+            margin-bottom: -0.6rem;
+        }
+    }
+
+    // review section
+    
+
+    // recent-seciton
+    .recent-section{
+        .recent-wrap{
+            margin-bottom: 60px;
+        }
+    }
+
+    // map section
+    .map-section{
+        padding: 60px 20px;
+        background-color: black;
+        .map{
+            width: 100%;
+            overflow: hidden;
+        }
+        .map-form-input{
+            .font-subtitle{
+                font-size: 50px;
+                margin-bottom: 20px;
+                margin-top: 50px;
+            }
+            form{
+                .map-form-input__name{
+                    @extend %form-display;
+                    flex-direction: column;
+                    .name-input{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
+                    }
+                }
+                .map-form-input__date{
+                    @extend %form-display;
+                    flex-direction: column;
+                    input{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
+                    }
+                }
+                .map-form-input-submit{ 
+                    @extend %form-display;
+                    flex-direction: column;
+                    textarea{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
+                    }
+                    .btn-main{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ----------------
+
+
+// tablet
+@media only screen and (max-width: 821px) and (min-width: 577px){
+    // header
+    .header{
+        .header-carousel{
+            .carousel-item{
+                .carousel-overlay{
+                    top: 10%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    
+    // book section
+    .book-section{
+        display: flex;
+        flex-direction: column;
+        .book-info-wrap{
+            width: 100%;
+            .book-info{
+                width: 100%;
+            }
+        }
+        .book-input{
+            width: 100%;
+            .book-input-name{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-date{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-submit{
+                flex-direction: column;
+                textarea{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+     // about section
+     .about-section{
+        display: flex;
+        flex-direction: column;
+        .about-half{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+            .about-half-rw{
+                width: 100%;
+                
+                &__content{
+                    text-align: center;
+                    padding: 10px;
+                    
+                    width: 100%
+                }
+            }
+        }
+    }
+
+    // review section
+    .review-section{
+        .review-wrap{
+            flex-wrap: wrap;
+        }
+    }
+
+    // map section
+    .map-section{
+        
+        .map{
+            
+        }
+        .map-form-input{
+            .font-subtitle{
+                
+            }
+            form{
+                .map-form-input__name{
+                    
+                    flex-direction: column;
+                    
+                    .name-input{
+                       
+                       
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input__date{
+                 
+                    flex-direction: column;
+                    input{
+                        
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input-submit{ 
+                   
+                    flex-direction: column;
+                    textarea{
+                        
+                        margin-bottom: 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+// --------------
+
+// PC
+@media only screen and (min-width: 1024px){
+
+    // about section
+    .about-section{
+       .about-half{ 
+            .about-half-rw{
+               margin-left: -550px;
+                 
+            }
+        }
+    }
+
+
+    // service section
+    .service-section{
+        padding-bottom: 100px;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+}
+

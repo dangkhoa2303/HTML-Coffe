@@ -1,0 +1,34 @@
+
+
+%border-input{
+    color: white;
+    background-color: $main-color;
+    border: none;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+    border-left: 1px solid rgba($color: #000000, $alpha: 0.5);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+%form-display{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+%icon-background-circle{
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%icon-size-small{
+    font-size: 24px;
+}
+
+@import './variable';
